@@ -6,16 +6,20 @@ services:
     ports:
       - 80:80
     depends_on:
-      - sanic_test_api
-  sanic_test_api_users:
-    build: './users'
+      - api_users
+  api_users:
+    build:
+        context: './users'
+        dockerfile: Dockerfile
     command: python main.py
     env_file:
       - .env
     volumes:
       - ./:/opt/sanic_test_users
-  sanic_test_api_offers:
-    build: './offers'
+  api_offers:
+    build:
+        context: './offers'
+        dockerfile: Dockerfile
     command: python main.py
     env_file:
       - .env

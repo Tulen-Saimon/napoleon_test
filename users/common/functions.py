@@ -67,7 +67,7 @@ async def authenticate_user(request):
 async def get_offers(user_id):
     req_json = {'user_id': user_id}
     async with aiohttp.ClientSession() as session:
-        async with session.post('http://127.0.0.1:8001/offers/', json=req_json) as resp:
+        async with session.post('http://api_offers:8001/offer/', json=req_json) as resp:
             return await resp.text()
 
 

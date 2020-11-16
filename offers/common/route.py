@@ -3,7 +3,7 @@ from sanic.response import json
 from common import functions
 
 
-of = bp('offer', url_prefix='/offers')
+of = bp('offer', url_prefix='/offer')
 
 
 @of.post('/create/')
