@@ -23,3 +23,9 @@
 > ```bash
 > (venv) $ python main.py
 > ```
+
+
+#### Альтернативный старт
+> ```bash
+> $ sudo docker-compose -f docker-compose.yml up -d --build
+> ```
