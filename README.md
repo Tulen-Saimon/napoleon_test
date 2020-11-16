@@ -25,7 +25,7 @@
 > ```
 
 
-#### Альтернативный старт
+#### Альтернативный старт Docker
 > ```bash
 > $ sudo docker-compose -f docker-compose.yml up -d --build
 > ```
