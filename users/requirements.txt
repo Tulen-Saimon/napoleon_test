@@ -12,7 +12,6 @@ idna==2.10
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 multidict==5.0.0
-psycopg2==2.8.6
 psycopg2-binary==2.8.6
 pycparser==2.20
 python-dotenv==0.15.0
@@ -26,3 +25,4 @@ ujson==4.0.1
 uvloop==0.14.0
 websockets==8.1
 aiohttp==3.7.2
+pyjwt==1.7.1
